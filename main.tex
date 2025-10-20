@@ -1,0 +1,99 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1.3cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{array}
+
+% =======================
+% Tight section headers
+% =======================
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt plus 1pt minus 1pt}{3pt}
+
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+% =======================
+% Header
+% ======================
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} m{2.8cm} m{9.4cm} m{2.8cm}}
+    \includegraphics[width=2.8cm]{image/profile.png} &
+    \begin{center}
+    {\LARGE \textbf{João Ventura}}\\[3pt]
+    Master in Distributed and Parallel\\[2pt]
+    \href{tel:+351914619080}{+351 914 619 080} | \href{mailto:joaoramalhoventura@gmail.com}{joaoramalhoventura@gmail.com} | Monte da Caparica\\
+    \href{https://www.linkedin.com/in/jo%C3%A3o-ventura-16a351263/}{https://www.linkedin.com/in/joaoventura} | \href{https://github.com/JhonCeda}{github.com/JhonCeda}
+    \end{center}
+    &
+    \raggedleft \includegraphics[width=2.8cm]{image/fct_logo.jpg}
+\end{tabular*}
+
+\vspace{0.15cm}
+
+\section*{Profile}
+First-year Masters student in Distributed and Parallel Systems at NOVA FCT. Passionate about servers, automation, cloud computing, and parallelization, with a strong focus on backend development and building RESTful systems. Seeking opportunities for a summer internship or a company partnership for my master's thesis project.
+
+\section*{Academic Background}
+\textbf{Bachelor's in Computer Science} — NOVA FCT, Caparica (Expected 2025)\\
+Gained comprehensive foundation in computer science fundamentals with particular interest in distributed systems, software engineering, and functional programming. Main coursework: Java and Python programming, Data Structures and Algorithms, Artificial Intelligence, and Machine Learning. Acted as tutor for programming and introductory AI courses.
+
+% =======================
+% PROFESSIONAL EXPERIENCE
+% =======================
+\section*{Professional Experience}
+
+\noindent\textbf{Land Management Application (Team Lead, 2025)}\\
+Led a team of four developers in designing and implementing a full-stack web and mobile platform for sustainable land management in collaboration with municipal partners. Built features for interactive GeoJSON-based mapping, field data collection with GPX tracking, real-time operation monitoring, photo and observation documentation, and offline mobile functionality. Developed secure user authentication with JWT and cookies, role-based access control, user management dashboards, and comprehensive reporting tools.
+
+\noindent\textbf{Home Server Setup \& Exploration (2025)}\\
+Built a local server environment to self-host applications and explore system administration and networking. Currently using it to host personal projects and test distributed environments.
+
+\noindent\textbf{Distributed Server–Client Implementation (2025)}\\
+Designed and implemented a distributed server–client system focusing on replication, data consistency, and availability. Implemented fault tolerance and synchronization mechanisms using Zookeeper and Kafka.
+
+\noindent\textbf{Programming Tutor — TreeTree2 (2021)}\\
+Tutored young people in Python over 2 months of weekend sessions, helping students conceptualize their progress and grasp Python basics effectively.
+
+% =======================
+% Licenses and Certification
+% =======================
+\section*{Licenses and Certification}
+\textbf{Programming Certificates — TreeTree2 (2020-2021)}\\
+Completed intermediate courses covering Python and C++ fundamentals, algorithm problem-solving, introductory AI model development, and game development with 2D platformer projects.
+
+% =======================
+% Technical Skills
+% =======================
+\section*{Technical Skills}
+\textbf{Programming Languages:} Java, Python, C, JavaScript, Shell, Dart\\
+\textbf{Frameworks \& Tools:} Spring Boot, Docker, Apache Spark\\
+\textbf{Databases:} SQL, PostgreSQL\\
+\textbf{Distributed Systems:} Zookeeper, Apache Kafka\\
+\textbf{Web \& Cloud:} Google App Engine, Microsoft Azure\\
+\textbf{Version Control:} Git, GitHub\\
+\textbf{Development:} Web and Mobile App Development, RESTful API Design, Responsive Design\\
+\textbf{Other:} Self-hosted portfolio website, Server Administration
+
+% =======================
+% Projects
+% =======================
+\section*{Projects}
+\textbf{Portfolio Website} — \href{https://jhonceda.duckdns.org}{jhonceda.duckdns.org}\\
+Self-hosted portfolio built with HTML, CSS, and JavaScript. Plans to integrate database functionality and RESTful APIs.
+
+\section*{Awards \& Recognition}
+\textbf{Honor Roll — TreeTree2 (2021):} Recognized for dedication to helping and mentoring fellow students.
+
+\section*{Languages}
+\textbf{English:} Advanced (C2) \quad \textbf{Portuguese:} Advanced (C2) \quad \textbf{Spanish:} Intermediate (B1) \quad \textbf{French:} Beginner
+
+\section*{Hobbies}
+Cooking, music (listening, composing, playing), technology tinkering, and creating art.
+
+\end{document}
