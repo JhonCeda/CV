@@ -1,5 +1,5 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[margin=1.3cm]{geometry}
+\usepackage[margin=1.1cm]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
@@ -11,90 +11,112 @@
 % Tight section headers
 % =======================
 \titleformat{\section}{\bfseries\large}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{5pt plus 1pt minus 1pt}{3pt}
+\titlespacing*{\section}{0pt}{4pt plus 1pt minus 1pt}{2pt}
 
 \renewcommand{\familydefault}{\sfdefault}
 \setlength{\parskip}{0pt}
 
+% Consistent spacing between experience entries
+\newcommand{\entryspace}{\vspace{3pt}}
+
 \begin{document}
 
 % =======================
-% Header
-% ======================
+% HEADER
+% =======================
 \noindent
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} m{2.8cm} m{9.4cm} m{2.8cm}}
     \includegraphics[width=2.8cm]{image/profile.png} &
     \begin{center}
-    {\LARGE \textbf{João Ventura}}\\[3pt]
-    Master in Distributed and Parallel\\[2pt]
-    \href{tel:+351914619080}{+351 914 619 080} | \href{mailto:joaoramalhoventura@gmail.com}{joaoramalhoventura@gmail.com} | Monte da Caparica\\
-    \href{https://www.linkedin.com/in/jo%C3%A3o-ventura-16a351263/}{https://www.linkedin.com/in/joaoventura} | \href{https://github.com/JhonCeda}{github.com/JhonCeda}
+    {\LARGE \textbf{João Ventura}}\\[2pt]
+    Master's in Distributed and Parallel Systems — NOVA FCT\\[1pt]
+    \href{tel:+351914619080}{+351 914 619 080} \;|\; \href{mailto:joaoramalhoventura@gmail.com}{joaoramalhoventura@gmail.com} \;|\; Monte da Caparica\\[1pt]
+    \href{https://www.linkedin.com/in/jo%C3%A3o-ventura-16a351263/}{linkedin.com/in/joaoventura} \;|\; \href{https://github.com/JhonCeda}{github.com/JhonCeda} \;|\; \href{https://jhonceda.duckdns.org}{jhonceda.duckdns.org}
     \end{center}
     &
     \raggedleft \includegraphics[width=2.8cm]{image/fct_logo.jpg}
 \end{tabular*}
 
-\vspace{0.15cm}
+\vspace{0.1cm}
 
+% =======================
+% PROFILE
+% =======================
 \section*{Profile}
-First-year Masters student in Distributed and Parallel Systems at NOVA FCT. Passionate about servers, automation, cloud computing, and parallelization, with a strong focus on backend development and building RESTful systems. Seeking opportunities for a summer internship or a company partnership for my master's thesis project.
+Second-year Master's student in Distributed and Parallel Systems at NOVA FCT, with a solid background in backend development, distributed architectures, and cloud infrastructure. Experienced in leading full-stack projects with real institutional partners, deploying self-hosted infrastructure, and working with HPC clusters. Currently exploring thesis directions in fault-tolerant distributed systems and edge computing. Seeking a summer internship or company thesis partnership for the 2025--2026 academic year.
 
+% =======================
+% ACADEMIC BACKGROUND
+% =======================
 \section*{Academic Background}
-\textbf{Bachelor's in Computer Science} — NOVA FCT, Caparica (Expected 2026)\\
-Gained comprehensive foundation in computer science fundamentals with particular interest in distributed systems, software engineering, and functional programming. Main coursework: Java and Python programming, Data Structures and Algorithms, Artificial Intelligence, and Machine Learning. Acted as tutor for programming and introductory AI courses.
+
+\noindent\textbf{Master's in Distributed and Parallel Systems} \hfill \textit{2025 -- Present}\\
+\textit{NOVA FCT, Universidade NOVA de Lisboa} \quad | \quad Second year in progress. Coursework: distributed algorithms, parallel computation, fault-tolerant architectures, cloud systems.
+
+\entryspace
+
+\noindent\textbf{Bachelor's in Computer Science} \hfill \textit{2022 -- 2026}\\
+\textit{NOVA FCT, Universidade NOVA de Lisboa \quad | \quad Final Grade: 14/20}\\
+Focus on distributed systems, software engineering, and functional programming. Coursework: Java, Python, Data Structures \& Algorithms, AI, and Machine Learning. Tutored introductory programming and AI courses.
 
 % =======================
 % PROFESSIONAL EXPERIENCE
 % =======================
 \section*{Professional Experience}
 
-\noindent\textbf{Land Management Application (Team Lead, 2025)}\\
-Led a team of four developers in designing and implementing a full-stack web and mobile platform for sustainable land management in collaboration with municipal partners. Built features for interactive GeoJSON-based mapping, field data collection with GPX tracking, real-time operation monitoring, photo and observation documentation, and offline mobile functionality. Developed secure user authentication with JWT and cookies, role-based access control, user management dashboards, and comprehensive reporting tools.
+\noindent\textbf{Full-Stack Developer \& Team Lead} \hfill \textit{2025}\\
+\textit{Land Management Platform — Academic \& Municipal Partnership (NOVA FCT + Câmaras Municipais)}\\
+Led a 4-person team to design and deliver a full-stack web and mobile platform for sustainable land management in partnership with local municipal authorities. Enabled field operatives to collect georeferenced data, submit reports, and track operations in offline-capable conditions. Implemented GeoJSON mapping, GPX field tracking, real-time monitoring, JWT authentication, role-based access control, and reporting tools. Stack: Flutter, Spring Boot, PostgreSQL, Docker.
 
-\noindent\textbf{Home Server Setup \& Exploration (2025)}\\
-Built a local server environment to self-host applications and explore system administration and networking. Currently using it to host personal projects and test distributed environments.
+\entryspace
 
-\noindent\textbf{Distributed Server–Client Implementation (2025)}\\
-Designed and implemented a distributed server–client system focusing on replication, data consistency, and availability. Implemented fault tolerance and synchronization mechanisms using Zookeeper and Kafka.
-
-\noindent\textbf{Programming Tutor — TreeTree2 (2021)}\\
-Tutored young people in Python over 2 months of weekend sessions, helping students conceptualize their progress and grasp Python basics effectively.
+\noindent\textbf{Programming Tutor} \hfill \textit{2021}\\
+\textit{TreeTree2}\\
+Invited to tutor following completion of TreeTree2's certified curriculum (Python, C++, algorithms, introductory AI, 2D game development). Delivered weekend sessions over two months teaching Python to young students, adapting to varying learning paces and tracking individual progress.
 
 % =======================
-% Licenses and Certification
-% =======================
-\section*{Licenses and Certification}
-\textbf{Programming Certificates — TreeTree2 (2020-2021)}\\
-Completed intermediate courses covering Python and C++ fundamentals, algorithm problem-solving, introductory AI model development, and game development with 2D platformer projects.
-
-% =======================
-% Technical Skills
+% TECHNICAL SKILLS
 % =======================
 \section*{Technical Skills}
-\textbf{Programming Languages:} Java, Python, C, JavaScript, Shell, Dart\\
-\textbf{Frameworks \& Tools:} Clusters, Arduino, Spring Boot, Docker, Apache\\
-\textbf{Databases:} SQL, PostgreSQL, Firebase, AzureDB\\
-\textbf{Distributed Systems:} Zookeeper, Apache Kafka, Paxos, Raft\\
-\textbf{Web \& Cloud:} Google App Engine, Microsoft Azure\\
-\textbf{Version Control:} Git, GitHub\\
-\textbf{Development:} Web/ Mobile App Development, RESTful API Design\\
-\textbf{Other:} Self-hosted portfolio website, Server Administration
+
+\noindent\textbf{Languages:} Java, Python, C, JavaScript, Shell/Bash, Dart\\
+\noindent\textbf{Backend \& Frameworks:} Spring Boot, RESTful API Design, Microservices, Apache\\
+\noindent\textbf{Distributed Systems:} Apache Kafka, Zookeeper, Paxos, Raft, event-driven architecture, fault-tolerant replication\\
+\noindent\textbf{HPC \& Clusters:} OAR (NOVA FCT DI-Cluster), parallel computation, distributed algorithm deployment\\
+\noindent\textbf{Databases:} PostgreSQL, SQL, Firebase, Azure SQL\\
+\noindent\textbf{DevOps \& Cloud:} Docker, Git/GitHub, Google App Engine, Microsoft Azure, CI/CD (GitHub Actions)\\
+\noindent\textbf{Embedded \& Hardware:} ESP32, Arduino IDE \quad \textbf{Mobile \& Web:} Flutter, offline-capable mobile architecture\\
+\noindent\textbf{Other:} Linux server administration, self-hosted infrastructure, system design, REST API testing (Postman)
 
 % =======================
-% Projects
+% PROJECTS
 % =======================
 \section*{Projects}
-\textbf{Portfolio Website} — \href{https://jhonceda.duckdns.org}{jhonceda.duckdns.org}\\
-Self-hosted portfolio built with HTML, CSS, and JavaScript. Plans to integrate database functionality and RESTful APIs.
 
+\noindent\textbf{Distributed Server--Client System} \hfill \textit{2025}\\
+Architected a distributed server--client system with fault-tolerant replication and strong consistency guarantees, implementing leader election via Zookeeper and event streaming via Apache Kafka.
+
+\entryspace
+
+\noindent\textbf{Self-Hosted Server Infrastructure} \hfill \textit{2025}\\
+Configured and maintain a Linux home server running multiple personal services, covering system administration, network configuration, and end-to-end service deployment. Hosts a personal portfolio at \href{https://jhonceda.duckdns.org}{jhonceda.duckdns.org} (HTML, CSS, JavaScript).
+
+% =======================
+% AWARDS & RECOGNITION
+% =======================
 \section*{Awards \& Recognition}
-\textbf{Honor Roll (2021):} Awarded for exceptional dedication to supporting classmates; the only student recognized with this distinction that year.
+\textbf{Honor Roll (2021):} Awarded for exceptional dedication to supporting classmates; the only student recognised with this distinction that year.
 
-
+% =======================
+% LANGUAGES
+% =======================
 \section*{Languages}
-\textbf{Portuguese:}  Native \quad \textbf{English:} Advanced (C2) \quad \textbf{Spanish:} Intermediate (B1) \quad \textbf{French:} Beginner A2
+\textbf{Portuguese:} Native \quad \textbf{English:} Advanced (C2) \quad \textbf{Spanish:} Intermediate (B1) \quad \textbf{French:} Beginner (A2)
 
+% =======================
+% HOBBIES
+% =======================
 \section*{Hobbies}
-Cooking, music (listening, composing, playing), technology tinkering, and creating art.
+Cooking, music (listening, composing, and playing), hardware tinkering, and creating art.
 
 \end{document}
